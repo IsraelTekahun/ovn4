@@ -110,6 +110,10 @@ namespace SkalProj_Datastrukturer_Minne
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// simulates a queue by priting elements/customers in a queue
+        /// </summary>
+        /// <param name="theQueue"></param>
         private static void ShowCustomers(Queue<string> theQueue)
         {
             Console.WriteLine("\nPeople in line: ");
@@ -123,11 +127,15 @@ namespace SkalProj_Datastrukturer_Minne
         }
 
 
-        private static char GetOppositParentesis(char parentesis)
+        /// <summary>
+        /// gets the closing matching opening parantesis
+        /// </summary>
+        /// <param name="closingParantesis"></param>
+        private static char GetOppositParentesis(char closingParantesis)
         {
-            if (parentesis == ')')
+            if (closingParantesis == ')')
                 return '(';
-            else if (parentesis == '}')
+            else if (closingParantesis == '}')
                 return '{';
             else
                 return '[';
