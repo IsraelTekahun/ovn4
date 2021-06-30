@@ -374,10 +374,6 @@ namespace SkalProj_Datastrukturer_Minne
 
 
 
-            Queue<int> myQueue = new Queue<int>(Enumerable.Range(1, 25));
-
-            Console.WriteLine($"Queue length after Clear(): {myQueue.Count}.");
-
             while (true)
             {
                 Console.WriteLine("Please navigate through the menu by inputting the number \n(1, 2, 3 ,4, 0) of your choice"
